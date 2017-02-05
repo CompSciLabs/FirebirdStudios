@@ -5,11 +5,12 @@ using Xamarin.Forms;
 
 namespace FirebirdStudios
 {
-	public partial class Home : ContentPage
+	public partial class Home : TabbedPage
 	{
 		public Home()
 		{
 			InitializeComponent();
+
 		}
 	}
 }

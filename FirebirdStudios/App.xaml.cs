@@ -8,7 +8,7 @@ namespace FirebirdStudios
 		{
 			InitializeComponent();
 
-			MainPage = new FirebirdStudiosPage();
+			MainPage = new NavigationPage(new FirebirdStudiosPage());
 		}
 
 		protected override void OnStart()
