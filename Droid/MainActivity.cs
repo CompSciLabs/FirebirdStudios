@@ -15,6 +15,7 @@ namespace FirebirdStudios.Droid
 	{
 		protected override void OnCreate(Bundle bundle)
 		{
+			Microsoft.WindowsAzure.MobileServices.CurrentPlatform.Init();
 			TabLayoutResource = Resource.Layout.Tabbar;
 			ToolbarResource = Resource.Layout.Toolbar;
 

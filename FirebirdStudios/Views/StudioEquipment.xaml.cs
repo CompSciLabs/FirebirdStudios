@@ -43,8 +43,9 @@ namespace FirebirdStudios
 			var equipment = e.SelectedItem as Equipment;
 			if (equipment != null)
 			{
-				Navigation.PushAsync(new EquipmentDetail(equipment))
+				Navigation.PushAsync(new EquipmentDetail(equipment));
 			}
+
 		}
 	}
 }
