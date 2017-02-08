@@ -16,5 +16,10 @@ namespace FirebirdStudios
 			await Navigation.PushAsync(new Home());
 
 		}
+
+		async void Login_Clicked(object sender, System.EventArgs e)
+		{
+			await Navigation.PushAsync(new LoginPage());
+		}
 	}
 }

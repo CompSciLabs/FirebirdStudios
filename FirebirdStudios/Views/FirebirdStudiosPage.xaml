@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:FirebirdStudios" x:Class="FirebirdStudios.FirebirdStudiosPage">
 	<StackLayout>
 		<Image x:Name="logo" HeightRequest="200" WidthRequest="200"/>
-		<Button Text="Login"/>
+		<Button Text="Login" Clicked="Login_Clicked"/>
 		<Button Text="Skip Login" Clicked= "Skip_Clicked"/>
 	</StackLayout>
 </ContentPage>
