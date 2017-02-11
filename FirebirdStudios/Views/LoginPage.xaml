@@ -11,9 +11,13 @@
 							<Entry IsPassword="true" HorizontalOptions="FillAndExpand" Placeholder="enter here" />
 						</StackLayout>
 					</ViewCell>
+					<ViewCell>
+						<StackLayout Orientation="Horizontal">
+							<Button Text="Login"/>
+						</StackLayout>
+					</ViewCell>
 				</TableSection>
 			</TableView.Root>
 		</TableView>
-		<Button Text="Login"/>
 	</StackLayout>
 </ContentPage>

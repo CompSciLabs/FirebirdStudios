@@ -8,5 +8,5 @@
 		</StackLayout>
 	</ContentPage>
 	<local:StudioEquipment Title="Equipment" Icon="Drum.png"/>
-	
+	<local:ContactUs Title="ContactUs"/>
 </TabbedPage>
