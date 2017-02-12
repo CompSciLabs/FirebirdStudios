@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-
+using FFImageLoading.Forms.Touch;
 using Foundation;
 using UIKit;
 
@@ -13,9 +13,9 @@ namespace FirebirdStudios.iOS
 		public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 		{
 			global::Xamarin.Forms.Forms.Init();
-			Xamarin.FormsMaps.Init();
+			//Xamarin.FormsMaps.Init();
 			LoadApplication(new App());
-
+			CachedImageRenderer.Init();
 			return base.FinishedLaunching(app, options);
 		}
 	}

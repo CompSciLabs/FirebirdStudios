@@ -5,6 +5,7 @@ using System.Net.Http;
 using Xamarin.Forms;
 using Newtonsoft.Json;
 using Microsoft.WindowsAzure.MobileServices;
+using FFImageLoading.Forms;
 
 namespace FirebirdStudios
 {

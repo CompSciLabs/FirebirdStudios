@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 
 using Xamarin.Forms;
-using Xamarin.Forms.Maps;
 
 namespace FirebirdStudios
 {
@@ -11,30 +10,23 @@ namespace FirebirdStudios
 		public ContactUs()
 		{
 			InitializeComponent();
-			generateMap();
+
 
 		}
 
-		void generateMap()
+		void Handle_Clicked(object sender, System.EventArgs e)
 		{
-			var position = new Position(51.4325818, -2.5422303);
-			var pin = new Pin
-			{
-				Position = position,
-				Type = PinType.Place,
-				Label = "FireBird Studios",
-				Address = "21- 23 Emery Road, Bristol BS4 5PF"
-			};
-			var map = new Map(MapSpan.FromCenterAndRadius(position, Distance.FromMiles(0.3)))
-			{
-				IsShowingUser = true,
-				HeightRequest = 200,
-				WidthRequest = 300
-			};
-			map.Pins.Add(pin);
-			var stack = new StackLayout();
-			stack.Children.Add(map);
-			Content = stack;
+			Navigation.PushModalAsync(new NavigationPage(new Posts()));
+		}
+
+		void Email_Tapped(object sender, System.EventArgs e)
+		{
+			Device.OpenUri(new Uri("mailto:info@firebirdstudios.co.uk"));
+		}
+
+		void Phone_Tapped(object sender, System.EventArgs e)
+		{
+			Device.OpenUri(new Uri("tel:01179721830"));
 		}
 	}
 

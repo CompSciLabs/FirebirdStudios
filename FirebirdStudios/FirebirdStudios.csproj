@@ -49,6 +49,9 @@
     <EmbeddedResource Include="Views\ContactUs.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
+    <EmbeddedResource Include="Views\Posts.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App.xaml.cs">
@@ -78,6 +81,10 @@
     <Compile Include="Views\ContactUs.xaml.cs">
       <DependentUpon>ContactUs.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\Posts.xaml.cs">
+      <DependentUpon>Posts.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Post.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Xamarin.Forms.Core">
@@ -120,9 +127,6 @@
     <Reference Include="Zlib.Portable">
       <HintPath>..\packages\Zlib.Portable.Signed.1.11.0\lib\portable-net4+sl5+wp8+win8+wpa81+MonoTouch+MonoAndroid\Zlib.Portable.dll</HintPath>
     </Reference>
-    <Reference Include="Xamarin.Forms.Maps">
-      <HintPath>..\packages\Xamarin.Forms.Maps.2.3.3.180\lib\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10\Xamarin.Forms.Maps.dll</HintPath>
-    </Reference>
     <Reference Include="FFImageLoading">
       <HintPath>..\packages\Xamarin.FFImageLoading.2.2.8\lib\portable-net45+win8+wpa81+wp8\FFImageLoading.dll</HintPath>
     </Reference>
@@ -137,6 +141,8 @@
     <None Include="Images\Home48.png" />
     <None Include="Images\Drum.png" />
     <None Include="packages.config" />
+    <None Include="Images\plus.png" />
+    <None Include="Images\Message.png" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Images\" />
