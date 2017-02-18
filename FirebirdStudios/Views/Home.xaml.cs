@@ -8,8 +8,7 @@ namespace FirebirdStudios
         public Home()
         {
             InitializeComponent();
-            var booking = new ToolbarItem();
-            booking.Icon = "plus.png";
+            var booking = new ToolbarItem {Icon = "plus.png"};
             booking.Clicked += NewBooking;
         }
 
