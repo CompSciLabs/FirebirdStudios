@@ -1,12 +1,10 @@
-﻿using System;
-namespace FirebirdStudios
+﻿namespace FirebirdStudios
 {
-	public class Equipment
-	{
-
-		public int id { get; set; }
-		public string Title { get; set; }
-		public string Description { get; set; }
-		public string ImageURL { get; set; }
-	}
+    public class Equipment
+    {
+        public int Id { get; set; }
+        public string Title { get; set; }
+        public string Description { get; set; }
+        public string ImageURL { get; set; }
+    }
 }

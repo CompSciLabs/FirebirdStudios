@@ -1,23 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="FirebirdStudios.LoginPage">
-	<StackLayout>
-		<TableView HasUnevenRows="false" Intent="Form" HeightRequest="50">
-			<TableView.Root >
-				<TableSection Title="details" >
-					<EntryCell Label="Username" Placeholder="enter here" />
-					<ViewCell >
-						<StackLayout Orientation="Horizontal">
-							<Label Text="Password" VerticalOptions="Center" HorizontalOptions="Center"/>
-							<Entry IsPassword="true" HorizontalOptions="FillAndExpand" Placeholder="enter here" />
-						</StackLayout>
-					</ViewCell>
-					<ViewCell>
-						<StackLayout Orientation="Horizontal">
-							<Button Text="Login"/>
-						</StackLayout>
-					</ViewCell>
-				</TableSection>
-			</TableView.Root>
-		</TableView>
-	</StackLayout>
+
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FirebirdStudios.LoginPage">
+    <StackLayout>
+        <TableView HasUnevenRows="false" Intent="Form" HeightRequest="50">
+            <TableView.Root>
+                <TableSection Title="details">
+                    <EntryCell Label="Username" Placeholder="enter here" />
+                    <ViewCell>
+                        <StackLayout Orientation="Horizontal">
+                            <Label Text="Password" VerticalOptions="Center" HorizontalOptions="Center" />
+                            <Entry IsPassword="true" HorizontalOptions="FillAndExpand" Placeholder="enter here" />
+                        </StackLayout>
+                    </ViewCell>
+                    <ViewCell>
+                        <StackLayout Orientation="Horizontal">
+                            <Button Text="Login" />
+                        </StackLayout>
+                    </ViewCell>
+                </TableSection>
+            </TableView.Root>
+        </TableView>
+    </StackLayout>
 </ContentPage>

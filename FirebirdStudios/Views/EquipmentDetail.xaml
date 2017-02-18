@@ -1,16 +1,17 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<ContentPage 
-	xmlns="http://xamarin.com/schemas/2014/forms" 
-	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-	x:Class="FirebirdStudios.EquipmentDetail"
-	xmlns:ffimageloading="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
-	Title="{Binding Title}">
-	<StackLayout>
-		<ffimageloading:CachedImage 
-							Source="{Binding ImageURL}"
-							DownsampleToViewSize="true" 
-								HeightRequest="200" 
-								WidthRequest="200"/>
-		<Label Text = "{Binding Description}"/>
-	</StackLayout>
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="FirebirdStudios.EquipmentDetail"
+    xmlns:ffimageloading="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
+    Title="{Binding Title}">
+    <StackLayout>
+        <ffimageloading:CachedImage
+            Source="{Binding ImageURL}"
+            DownsampleToViewSize="true"
+            HeightRequest="200"
+            WidthRequest="200" />
+        <Label Text="{Binding Description}" />
+    </StackLayout>
 </ContentPage>

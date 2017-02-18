@@ -1,10 +1,6 @@
-﻿using System;
-namespace FirebirdStudios
+﻿namespace FirebirdStudios
 {
-	public class GoogleCalendar
-	{
-		public GoogleCalendar()
-		{
-		}
-	}
+    public class GoogleCalendar
+    {
+    }
 }

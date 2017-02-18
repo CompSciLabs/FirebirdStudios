@@ -1,16 +1,18 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="FirebirdStudios.ContactUs">
-	<ContentPage.ToolbarItems>
-		<ToolbarItem Text="New Booking" Icon="plus.png" Clicked="Handle_Clicked"/>
-	</ContentPage.ToolbarItems>
-	<StackLayout>
-		<TableView>
-			<TableView.Root>
-				<TableSection Title="Contact Details">
-					<TextCell Text="Phone Number" Detail="01179721830" Tapped="Phone_Tapped"/>
-					<TextCell Text="Email Address" Detail="info@firebirdstudios.co.uk" Tapped="Email_Tapped"/>
-				</TableSection>
-			</TableView.Root>
-		</TableView>
-	</StackLayout>
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FirebirdStudios.ContactUs">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="New Booking" Icon="plus.png" Clicked="Handle_Clicked" />
+    </ContentPage.ToolbarItems>
+    <StackLayout>
+        <TableView>
+            <TableView.Root>
+                <TableSection Title="Contact Details">
+                    <TextCell Text="Phone Number" Detail="01179721830" Tapped="Phone_Tapped" />
+                    <TextCell Text="Email Address" Detail="info@firebirdstudios.co.uk" Tapped="Email_Tapped" />
+                </TableSection>
+            </TableView.Root>
+        </TableView>
+    </StackLayout>
 </ContentPage>
